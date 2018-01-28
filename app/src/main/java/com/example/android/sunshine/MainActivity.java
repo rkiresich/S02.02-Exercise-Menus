@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemClickedId = item.getItemId();
         if(itemClickedId == R.id.action_refresh){
-            mWeatherTextView.clearComposingText();
+            mWeatherTextView.setText("");
             loadWeatherData();
             return true;
         }
